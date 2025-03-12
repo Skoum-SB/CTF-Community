@@ -1,0 +1,22 @@
+{% extends "container_base.html" %}
+
+
+{% block menu %}
+<li class="nav-item">
+    <a class="nav-link" href="/containers/admin/dashboard">&#128279; Instances</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="/containers/admin/settings">&#128279; Settings</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active" data-toggle="pill" href="#flag">Share flag</a>
+</li>
+{% endblock %}
+
+{% block panel %}
+{% include "components/errors.html" %}
+
+
+{% include "config/container_status.html" %}
+
+{% endblock %}
